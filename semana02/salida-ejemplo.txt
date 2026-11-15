@@ -1,0 +1,90 @@
+=== /etc ===
+/etc gurada archivos de configuracion del sistema en texto plano 
+total 864
+-rw-r--r-- 1 root     root      3444 Jul  5  2023 adduser.conf
+drwxr-xr-x 1 root     root     12288 Nov  4 08:13 alternatives
+drwxr-xr-x 4 root     root      4096 Nov  4 08:10 apache2
+drwxr-xr-x 2 root     root      4096 Nov  4 08:10 apparmor
+drwxr-xr-x 1 root     root      4096 Nov  4 08:12 apparmor.d
+drwxr-xr-x 1 root     root      4096 Oct 24 14:05 apt
+-rw-r--r-- 1 root     root      2319 Mar 31  2024 bash.bashrc
+-rw-r--r-- 1 root     root        45 Jan 24  2020 bash_completion
+drwxr-xr-x 1 root     root      4096 Nov  4 08:19 bash_completion.d
+-rw-r--r-- 1 root     root       367 Aug  2  2022 bindresvport.blacklist
+drwxr-xr-x 2 root     root      4096 Oct 12 07:36 binfmt.d
+drwxr-xr-x 1 root     root      4096 Nov  4 08:08 ca-certificates
+-rw-r--r-- 1 root     root      5240 Nov  4 08:08 ca-certificates.conf
+drwxr-xr-x 2 root     root      4096 Oct 24 14:12 cloud
+drwxr-xr-x 2 root     root      4096 Nov  4 08:10 containerd
+drwx------ 2 root     root      4096 Oct 12 07:36 credstore
+drwx------ 2 root     root      4096 Oct 12 07:36 credstore.encrypted
+drwxr-xr-x 1 root     root      4096 Nov  4 08:12 cron.d
+drwxr-xr-x 1 root     root      4096 Nov  4 08:12 cron.daily
+--------------------------------------------------
+
+=== /var ===
+/var guarda datos que cambian: registros,colas y caches.
+total 44K
+drwxr-xr-x 2 root root   4.0K Apr 22  2024 backups
+drwxr-xr-x 1 root root   4.0K Nov  4 08:13 cache
+drwxr-xr-x 3 root root   4.0K Nov 15 17:15 config
+drwxr-xr-x 1 root root   4.0K Nov 15 17:15 lib
+drwxrwsr-x 2 root staff  4.0K Apr 22  2024 local
+lrwxrwxrwx 1 root root      9 Oct 24 14:05 lock -> /run/lock
+drwxrwxr-x 1 root syslog 4.0K Nov 15 17:15 log
+drwxrwsr-x 2 root mail   4.0K Oct 24 14:05 mail
+drwxr-xr-x 2 root root   4.0K Oct 24 14:05 opt
+lrwxrwxrwx 1 root root      4 Oct 24 14:05 run -> /run
+drwxr-xr-x 1 root root   4.0K Nov  4 08:12 spool
+drwxrwxrwt 2 root root   4.0K Oct 24 14:12 tmp
+--------------------------------------------------
+
+=== /home ===
+/home comntiene un subdirectorio por usuario con sus archivos personales 
+total 20
+drwxr-x--- 9 calebrodriguezj calebrodriguezj  4096 Nov 15 19:17 calebrodriguezj
+drwx------ 2 root            root            16384 Mar 25  2015 lost+found
+--------------------------------------------------
+
+=== /bin ===
+/bin contiene progrmas esenciales disponibles para todo usuario
+lrwxrwxrwx 1 root root 7 Apr 22  2024 /bin -> usr/bin
+--------------------------------------------------
+
+=== /tmp ===
+/tmp contiene archivos temporales que se  vacian al reiniciar.
+total 20K
+-rw-r--r-- 1 calebrodriguezj calebrodriguezj 4.7K Nov 15 17:15 minikube_delete_e74f8ebd72c5c5fb0c1bfa462a381668458ae795_0.log
+drwxrwxr-x 3 calebrodriguezj calebrodriguezj 4.0K Nov 15 17:15 node-compile-cache
+-rw-rw-r-- 1 calebrodriguezj calebrodriguezj    0 Nov 15 17:15 restore_bashrc.lock
+-rw-rw-r-- 1 calebrodriguezj calebrodriguezj    0 Nov 15 17:15 restore_profile.lock
+drwx------ 4 calebrodriguezj calebrodriguezj 4.0K Nov 15 17:15 tmp.7wBntygG8V
+-rw------- 1 root            root               0 Nov 15 17:15 tmp.ZqEebFvpvA
+drwx------ 2 calebrodriguezj calebrodriguezj 4.0K Nov 15 17:15 tmux-1000
+--------------------------------------------------
+
+=== /proc ===
+/proc es  un sistema  virtual: el kernel genera su contenido al leerlo 
+total 0
+dr-xr-xr-x  9 root            root                          0 Nov 15 17:15 1
+dr-xr-xr-x  9 calebrodriguezj calebrodriguezj               0 Nov 15 20:01 1003
+dr-xr-xr-x  9 calebrodriguezj calebrodriguezj               0 Nov 15 20:01 1004
+dr-xr-xr-x  9 calebrodriguezj calebrodriguezj               0 Nov 15 20:01 1005
+dr-xr-xr-x  9 calebrodriguezj calebrodriguezj               0 Nov 15 17:15 1006
+dr-xr-xr-x  9 calebrodriguezj calebrodriguezj               0 Nov 15 17:15 1008
+dr-xr-xr-x  9 calebrodriguezj calebrodriguezj               0 Nov 15 20:01 1009
+dr-xr-xr-x  9 calebrodriguezj calebrodriguezj               0 Nov 15 20:08 2472
+dr-xr-xr-x  9 calebrodriguezj calebrodriguezj               0 Nov 15 20:08 2482
+dr-xr-xr-x  9 calebrodriguezj calebrodriguezj               0 Nov 15 20:08 2483
+dr-xr-xr-x  9 root            root                          0 Nov 15 17:15 25
+dr-xr-xr-x  9 root            root                          0 Nov 15 17:15 26
+dr-xr-xr-x  9 root            root                          0 Nov 15 17:15 584
+dr-xr-xr-x  9 root            root                          0 Nov 15 17:15 681
+dr-xr-xr-x  9 root            root                          0 Nov 15 17:15 685
+dr-xr-xr-x  9 root            root                          0 Nov 15 17:15 705
+dr-xr-xr-x  9 root            root                          0 Nov 15 17:15 713
+dr-xr-xr-x  9 root            root                          0 Nov 15 17:15 75
+dr-xr-xr-x  9 root            root                          0 Nov 15 17:15 79
+--------------------------------------------------
+
+exploracion completada
