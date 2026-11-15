@@ -26,3 +26,10 @@ mv trabajo/*.md organized/documentos/
 mv trabajo/*.jpg organized/imagenes/
 mv trabajo/*.log organized/registros/
 
+
+chmod 755 organized/scripts/*.sh
+chmod 644 organized/documentos/* organized/imagenes/*
+chmod 444 organized/registros/*
+chmod 755 organized organized/scripts organized/documentos
+chmod 755 organized/imagenes organized/registros organized/otros
+
