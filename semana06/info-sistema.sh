@@ -27,8 +27,14 @@ case "$OPCION" in
         uname -a
         head -n 5 /etc/os-release
         uptime -p
-        free -h | head -n 2
-        ;;
+free -h | head -n 2
+;;
+-u)
+    echo "=== Usuario ==="
+    whoami
+    id
+    groups
+    ;;
 esac
 
 exit 0
