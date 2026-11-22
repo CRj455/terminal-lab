@@ -1,0 +1,22 @@
+=== Sistema ===
+Linux cs-579734045796-default 6.18.55+ #1 SMP Wed Oct 28 16:16:25 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.5 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.5 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+up 3 hours, 53 minutes
+               total        used        free      shared  buff/cache   available
+Mem:           7.8Gi       2.8Gi       3.9Gi       1.1Mi       1.4Gi       5.0Gi
+=== Usuario ===
+calebrodriguezj
+uid=1000(calebrodriguezj) gid=1000(calebrodriguezj) groups=1000(calebrodriguezj),4(adm),27(sudo),996(docker)
+calebrodriguezj adm sudo docker
+=== Disco ===
+Filesystem                         Size  Used Avail Use% Mounted on
+overlay                            119G  109G  9.9G  92% /
+tmpfs                               64M     0   64M   0% /dev
+/dev/sda1                          119G  109G  9.9G  92% /root
+/dev/disk/by-id/google-home-part1  4.8G  399M  4.2G   9% /home
+shm                                 64M     0   64M   0% /dev/shm
+16K	.
