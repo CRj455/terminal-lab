@@ -1,0 +1,2 @@
+# Fragmento agregardo a -/.bashrc para respaldar-trabajo
+export PATH="$HOME/bin:$PATH"
