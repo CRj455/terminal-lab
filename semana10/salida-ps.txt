@@ -1,0 +1,133 @@
+Exploracion del sistema - PowerShell
+
+=== /etc ===
+/etc guarda la configuracion del sistema en texto plano.
+
+Name              Length LastWriteTime
+----              ------ -------------
+alternatives             11/4/2026 8:13:24 AM
+apache2                  11/4/2026 8:10:30 AM
+apparmor                 11/4/2026 8:10:07 AM
+apparmor.d               11/4/2026 8:12:47 AM
+apt                      10/24/2026 2:05:17 PM
+bash_completion.d        11/4/2026 8:19:17 AM
+binfmt.d                 10/12/2026 7:36:16 AM
+ca-certificates          11/4/2026 8:08:41 AM
+cloud                    10/24/2026 2:12:06 PM
+containerd               11/4/2026 8:10:08 AM
+
+
+--------------------------------------------------
+
+=== /var ===
+/var guarda datos que cambian: registros, colas y caches.
+
+Name    Length LastWriteTime
+----    ------ -------------
+backups        4/22/2024 1:08:03 PM
+cache          11/4/2026 8:13:25 AM
+config         11/28/2026 1:04:01 AM
+lib            11/28/2026 1:04:01 AM
+local          4/22/2024 1:08:03 PM
+lock           10/24/2026 2:05:10 PM
+log            11/28/2026 1:04:02 AM
+mail           10/24/2026 2:05:10 PM
+opt            10/24/2026 2:05:10 PM
+run            10/24/2026 2:05:10 PM
+
+
+--------------------------------------------------
+
+=== /home ===
+/home contiene un subdirectorio por usuario.
+
+Name            Length LastWriteTime
+----            ------ -------------
+calebrodriguezj        11/28/2026 2:11:52 AM
+lost+found             3/25/2015 4:38:13 PM
+
+
+--------------------------------------------------
+
+=== /bin ===
+/bin contiene los programas esenciales del sistema.
+
+Name               Length LastWriteTime
+----               ------ -------------
+X11                       4/8/2024 4:23:20 PM
+[                  55744  8/25/2026 3:09:03 PM
+aa-enabled         18744  9/18/2026 5:52:55 PM
+aa-exec            18744  9/18/2026 5:52:55 PM
+aa-features-abi    18736  9/18/2026 5:52:55 PM
+aclocal            25     2/1/2024 6:46:14 PM
+aclocal-1.16       36020  2/1/2024 6:46:14 PM
+acyclic            14488  5/11/2024 6:31:23 PM
+add-apt-repository 16422  1/5/2026 4:17:49 PM
+addpart            14720  8/19/2026 4:47:51 PM
+
+
+--------------------------------------------------
+
+=== /tmp ===
+/tmp contiene archivos temporales que se borran al reiniciar.
+
+Name                 Length LastWriteTime
+----                 ------ -------------
+cloudcode-tempBrFmwZ        11/28/2026 1:54:30 AM
+cloudcode-tempDKtHGO        11/28/2026 1:54:30 AM
+cloudcode-tempo5MEyU        11/28/2026 1:54:30 AM
+cloudcode-tempW82WNQ        11/28/2026 1:54:30 AM
+gemini                      11/28/2026 1:53:55 AM
+node-compile-cache          11/28/2026 1:04:04 AM
+tmp.ENhKCAmmvR              11/28/2026 1:54:26 AM
+tmp.HLPIgcFP8J              11/28/2026 1:53:58 AM
+tmp.ieXWEqbZTC              11/28/2026 1:04:13 AM
+tmux-1000                   11/28/2026 1:04:10 AM
+
+
+--------------------------------------------------
+
+=== /proc ===
+/proc es virtual: el kernel genera su contenido al leerlo.
+
+Name Length LastWriteTime
+---- ------ -------------
+1           11/28/2026 1:04:01 AM
+10          11/28/2026 1:04:01 AM
+1389        11/28/2026 1:04:49 AM
+1390        11/28/2026 1:10:41 AM
+1412        11/28/2026 1:04:49 AM
+2186        11/28/2026 1:53:29 AM
+2188        11/28/2026 1:53:30 AM
+2189        11/28/2026 1:53:47 AM
+2191        11/28/2026 1:53:47 AM
+2194        11/28/2026 1:53:47 AM
+
+
+--------------------------------------------------
+
+Exploracion completada.
+=== Descubrimiento ===
+Cmdlets con el sustantivo Item:
+[31;1mGet-Command: [0m/home/calebrodriguezj/terminal-lab/semana10/explorar-sistema.ps1:53
+[36;1mLine |[0m
+[36;1m[36;1m  53 | [0m [36;1mGet-Command -Noun Item -CommandType Cmdlet[0m |
+[36;1m     | [31;1m ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[36;1m[31;1m[31;1m[36;1m     | [31;1mParameter set cannot be resolved using the specified named parameters. One or more[0m
+[36;1m[31;1m[31;1m[36;1m[31;1m[36;1m     | [31;1mparameters issued cannot be used together or an insufficient number of parameters were[0m
+[36;1m[31;1m[31;1m[36;1m[31;1m[36;1m[31;1m[36;1m     | [31;1mprovided.[0m
+[36;1m[31;1m[31;1m[36;1m[31;1m[36;1m[31;1m[36;1m[31;1m[0m
+Sintesis de la ayuda de Get-ChildItem:
+
+Name     : Get-ChildItem
+Synopsis : 
+           Get-ChildItem [[-Path] <string[]>] [[-Filter] <string>] [-Include <string[]>] [-Exclude <string[]>] [-Recurse] [-Depth <uint>] [-Force] [-Name] [-Attributes <FlagsExpression[FileAttributes]>] [-FollowSymlink] [-Directory] [-File] [-Hidden] [-ReadOnly] [-System] [<CommonParameters>]
+           
+           Get-ChildItem [[-Filter] <string>] -LiteralPath <string[]> [-Include <string[]>] [-Exclude <string[]>] [-Recurse] [-Depth <uint>] [-Force] [-Name] [-Attributes <FlagsExpression[FileAttributes]>] [-FollowSymlink] [-Directory] [-File] [-Hidden] [-ReadOnly] [-System] [<CommonParameters>]
+           
+
+
+Cantidad de elementos en /etc:
+180
+
+Exploracion completada.
