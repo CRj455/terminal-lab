@@ -46,3 +46,25 @@ Show-Seccion -Path "/tmp" -Desc "/tmp contiene archivos temporales que se borran
 Show-Seccion -Path "/proc" -Desc "/proc es virtual: el kernel genera su contenido al leerlo."
 
 Write-Output "Exploracion completada."
+
+Write-Output "=== Descubrimiento ==="
+
+Write-Output "Cmdlets con el sustantivo Item:"
+Get-Command -Noun Item -CommandType Cmdlet |
+    Select-Object Name, Source |
+    Format-Table -AutoSize |
+    Out-String |
+    Write-Output
+
+Write-Output "Sintesis de la ayuda de Get-ChildItem:"
+Get-Help Get-ChildItem |
+    Select-Object Name, Synopsis |
+    Format-List |
+    Out-String |
+    Write-Output
+
+Write-Output "Cantidad de elementos en /etc:"
+(Get-ChildItem -LiteralPath /etc -ErrorAction SilentlyContinue).Count
+
+Write-Output ""
+Write-Output "Exploracion completada."
